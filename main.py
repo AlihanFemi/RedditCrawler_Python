@@ -22,7 +22,7 @@ for post in new_post:
 
 for key in posts_titles:
     for value in posts_titles[key]:
-        if value == pattern:
+        if value.lower() == pattern.lower():
             final_posts[key] = posts_link.get(key)
 
 for post in final_posts:
